@@ -24,9 +24,11 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
-
-console.log(d);
+let customerName = "Alice";
+let numberOfItems = 5;
+let itemPrice= 20;
+let discountRate = 0.1;
+let totalCost = numberOfItems * itemPrice;
+let discountedCost = totalCost - (totalCost * discountRate);
+let message = `${customerName} bought ${numberOfItems} items for $${totalCost}. After a ${discountRate * 100}% discount, the total cost is $${discountedCost}.`;
+console.log(message);
